@@ -32,15 +32,20 @@ class _MytaskState extends State<Mytask> {
           children: [
             TextButton(
                 onPressed: () {
-                  if(index>0)
+           
                   setState(() {
-                    index--;
+                 index--;
                   });
                 },
                 child: Icon(Icons.arrow_back_ios)),
-                 Text('Image :$index'),
+                 Container(
+                  alignment: Alignment.center,
+                  height: 40,
+                  width: 150,
+                  color: Colors.blue,
+                  child: Text('Image :$index',style: TextStyle(color: Colors.white,fontSize: 20),)),
         TextButton(onPressed: (){
-          if(index<3)
+          
           setState(() {
             index++;
           });
